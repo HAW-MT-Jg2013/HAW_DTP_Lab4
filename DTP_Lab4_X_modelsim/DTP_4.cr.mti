@@ -1,0 +1,17 @@
+{Z:/Dropbox/2014 BScMech3/DTP/DTP_Lab4/DTP_Lab4_X_modelsim/CRC6TX.vhd} {1 {vcom -work work -2002 -explicit -stats=none {Z:/Dropbox/2014 BScMech3/DTP/DTP_Lab4/DTP_Lab4_X_modelsim/CRC6TX.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3c Compiler 2014.07 Jul 19 2014
+-- Loading package STANDARD
+-- Compiling entity FF
+-- Compiling architecture behv of FF
+-- Compiling entity CRC6TX
+-- Compiling architecture behv of CRC6TX
+
+} {} {}} {Z:/Dropbox/2014 BScMech3/DTP/DTP_Lab4/DTP_Lab4_X_modelsim/CRC6RX.vhd} {1 {vcom -work work -2002 -explicit -stats=none {Z:/Dropbox/2014 BScMech3/DTP/DTP_Lab4/DTP_Lab4_X_modelsim/CRC6RX.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3c Compiler 2014.07 Jul 19 2014
+-- Loading package STANDARD
+-- Compiling entity FF
+-- Compiling architecture behv of FF
+-- Compiling entity CRC6RX
+-- Compiling architecture behv of CRC6RX
+
+} {} {}}
