@@ -1,4 +1,20 @@
-{Z:/Dropbox/2014 BScMech3/DTP/DTP_Lab4/DTP_Lab4_X_modelsim/CRC6TX.vhd} {1 {vcom -work work -2002 -explicit -stats=none {Z:/Dropbox/2014 BScMech3/DTP/DTP_Lab4/DTP_Lab4_X_modelsim/CRC6TX.vhd}
+{Z:/Dropbox/2014 BScMech3/DTP/DTP_Lab4/DTP_Lab4_X_modelsim/6BitRandom.vhd} {1 {vcom -work work -2002 -explicit -stats=none {Z:/Dropbox/2014 BScMech3/DTP/DTP_Lab4/DTP_Lab4_X_modelsim/6BitRandom.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3c Compiler 2014.07 Jul 19 2014
+-- Loading package STANDARD
+-- Compiling entity FF
+-- Compiling architecture behv of FF
+-- Compiling entity RANDOM_6BIT
+-- Compiling architecture behv of RANDOM_6BIT
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity RANDOM_CT
+-- Compiling architecture counter of RANDOM_CT
+-- Compiling entity RANDOM_SET
+-- Compiling architecture behv of RANDOM_SET
+
+} {} {}} {Z:/Dropbox/2014 BScMech3/DTP/DTP_Lab4/DTP_Lab4_X_modelsim/CRC6TX.vhd} {1 {vcom -work work -2002 -explicit -stats=none {Z:/Dropbox/2014 BScMech3/DTP/DTP_Lab4/DTP_Lab4_X_modelsim/CRC6TX.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.3c Compiler 2014.07 Jul 19 2014
 -- Loading package STANDARD
 -- Compiling entity FF
