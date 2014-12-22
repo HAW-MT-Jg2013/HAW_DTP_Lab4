@@ -18,7 +18,7 @@ begin
 end behv;
 
 -------------------------
---     D-FlipFlip      --
+--     CRC decoder     --
 -------------------------
 entity CRC6RX is 
   port(ZOUT: out bit;

@@ -18,7 +18,7 @@ begin
 end behv;
 
 -------------------------
---     CRC decoder     --
+--     CRC encoder     --
 -------------------------
 entity CRC6TX is 
   port(Z:    in bit;
