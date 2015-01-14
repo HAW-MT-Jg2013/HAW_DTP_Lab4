@@ -11,7 +11,7 @@ architecture behv of FF is
 begin
   process(CLK)
   begin
-    if CLK = '1' then 
+    if CLK'event and CLK = '1' then 
        Q <= D;
     end if;
   end process;
@@ -77,11 +77,12 @@ signal CNT_INT: std_logic_vector (6 downto 0);
 begin
   process(CLK, RESET)
   begin
-    if (CLK'event and CLK='1') then
-      CNT_INT <= CNT_INT + 1;
-    end if;
-    if (RESET = '1') then
-      CNT_INT <= "0000001";
+    if (CLK'event and CLK='0') then
+      if (RESET = '1') then
+        CNT_INT <= "0000001";
+      else
+        CNT_INT <= CNT_INT + 1;
+      end if;
     end if;
   end process;
 CNT <= to_bitvector(CNT_INT);
@@ -122,8 +123,8 @@ CNT0:RANDOM_CT   port map(RST_INT, CLK, CNT_INT);
 
 process (RAND_INT, CLK)
 begin
-  RST_INT <= '0';
-  if (CLK'event and CLK='0') then
+  if (CLK'event and CLK='1') then
+    RST_INT <= '0';
     if (RAND_INT = "001000") then
       RST_INT <= '1';
       MAX <= CNT_INT;
