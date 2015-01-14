@@ -1,0 +1,302 @@
+MDF Database:  version 1.0
+MDF_INFO | RANDOM_SET | XC2C256-7-PQ208
+MACROCELL | 15 | 13 | MAX<0>_MC
+ATTRIBUTES | 142869314 | 0
+INPUTS | 7 | CNT_INT<0>  | N_PZ_111  | N_PZ_113  | N_PZ_112  | RAND<1>  | RAND<4>  | RAND<5>
+INPUTMC | 7 | 0 | 14 | 0 | 3 | 0 | 1 | 0 | 2 | 14 | 13 | 11 | 13 | 11 | 12
+LCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   MAX<0> := CNT_INT<0>;	// (1 pt, 1 inp)
+    MAX<0>.CLK = CLK;	// CTC	(1 pt, 1 inp)
+    MAX<0>.CE = !N_PZ_111 & N_PZ_113 & !N_PZ_112 & !RAND<1> & 
+	!RAND<4> & !RAND<5>;	// (1 pt, 6 inp)
+
+MACROCELL | 0 | 14 | CNT_INT<0>_MC
+ATTRIBUTES | 2290090752 | 0
+OUTPUTMC | 8 | 0 | 14 | 15 | 13 | 0 | 15 | 0 | 6 | 0 | 7 | 0 | 8 | 0 | 9 | 0 | 10
+INPUTS | 2 | CNT_INT<0>  | RST_INT
+INPUTMC | 2 | 0 | 14 | 0 | 12
+LCT | 1 | 2 | Internal_Name
+EQ | 2 | 
+   !CNT_INT<0> := CNT_INT<0> & !RST_INT;	// (1 pt, 2 inp)
+    CNT_INT<0>.CLK = !(CLK);	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 0 | 12 | RST_INT_MC
+ATTRIBUTES | 2290090752 | 0
+OUTPUTMC | 7 | 0 | 14 | 0 | 15 | 0 | 6 | 0 | 7 | 0 | 8 | 0 | 9 | 0 | 10
+INPUTS | 6 | N_PZ_111  | N_PZ_113  | N_PZ_112  | RAND<1>  | RAND<4>  | RAND<5>
+INPUTMC | 6 | 0 | 3 | 0 | 1 | 0 | 2 | 14 | 13 | 11 | 13 | 11 | 12
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   RST_INT := !N_PZ_111 & N_PZ_113 & !N_PZ_112 & !RAND<1> & 
+	!RAND<4> & !RAND<5>;	// (1 pt, 6 inp)
+    RST_INT.CLK = CLK;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 14 | 13 | RAND<1>_MC
+ATTRIBUTES | 2290352898 | 0
+OUTPUTMC | 9 | 0 | 13 | 0 | 12 | 15 | 13 | 15 | 12 | 15 | 11 | 15 | 10 | 15 | 5 | 15 | 4 | 15 | 3
+INPUTS | 1 | N_PZ_111
+INPUTMC | 1 | 0 | 3
+LCT | 1 | 2 | Internal_Name
+EQ | 2 | 
+   RAND<1> := N_PZ_111;	// (1 pt, 1 inp)
+    RAND<1>.CLK = CLK;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 0 | 3 | N_PZ_111_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 10 | 14 | 13 | 0 | 12 | 15 | 13 | 15 | 12 | 15 | 11 | 15 | 10 | 15 | 5 | 15 | 4 | 15 | 3 | 14 | 12
+INPUTS | 2 | INIT  | RND0/Q<5>
+INPUTMC | 1 | 0 | 4
+INPUTP | 1 | 69
+EQ | 2 | 
+   N_PZ_111 = INIT & !RND0/Q<5>
+	# !INIT & RND0/Q<5>;	// (2 pt, 2 inp)
+
+MACROCELL | 0 | 4 | RND0/Q<5>_MC
+ATTRIBUTES | 2285896448 | 0
+OUTPUTMC | 4 | 0 | 2 | 0 | 1 | 0 | 3 | 11 | 12
+INPUTS | 1 | RND0/Q<4>
+INPUTMC | 1 | 0 | 5
+LCT | 1 | 2 | Internal_Name
+EQ | 2 | 
+   RND0/Q<5>.T := RND0/Q<4>;	// (1 pt, 1 inp)
+    RND0/Q<5>.CLK = CLK;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 0 | 5 | RND0/Q<4>_MC
+ATTRIBUTES | 2290090752 | 0
+OUTPUTMC | 2 | 0 | 4 | 11 | 12
+INPUTS | 1 | RAND<4>
+INPUTMC | 1 | 11 | 13
+LCT | 1 | 2 | Internal_Name
+EQ | 2 | 
+   RND0/Q<4> := RAND<4>;	// (1 pt, 1 inp)
+    RND0/Q<4>.CLK = CLK;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 11 | 13 | RAND<4>_MC
+ATTRIBUTES | 2290352898 | 0
+OUTPUTMC | 9 | 0 | 5 | 0 | 12 | 15 | 13 | 15 | 12 | 15 | 11 | 15 | 10 | 15 | 5 | 15 | 4 | 15 | 3
+INPUTS | 1 | N_PZ_113
+INPUTMC | 1 | 0 | 1
+LCT | 1 | 2 | Internal_Name
+EQ | 2 | 
+   RAND<4> := N_PZ_113;	// (1 pt, 1 inp)
+    RAND<4>.CLK = CLK;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 0 | 1 | N_PZ_113_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 10 | 11 | 13 | 0 | 12 | 15 | 13 | 15 | 12 | 15 | 11 | 15 | 10 | 15 | 5 | 15 | 4 | 15 | 3 | 11 | 14
+INPUTS | 2 | RND0/Q<5>  | RND0/Q<2>
+INPUTMC | 2 | 0 | 4 | 0 | 11
+EQ | 2 | 
+   N_PZ_113 = RND0/Q<5> & !RND0/Q<2>
+	# !RND0/Q<5> & RND0/Q<2>;	// (2 pt, 2 inp)
+
+MACROCELL | 0 | 11 | RND0/Q<2>_MC
+ATTRIBUTES | 2290090752 | 0
+OUTPUTMC | 1 | 0 | 1
+INPUTS | 1 | N_PZ_112
+INPUTMC | 1 | 0 | 2
+LCT | 1 | 2 | Internal_Name
+EQ | 2 | 
+   RND0/Q<2> := N_PZ_112;	// (1 pt, 1 inp)
+    RND0/Q<2>.CLK = CLK;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 0 | 2 | N_PZ_112_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 10 | 0 | 11 | 0 | 12 | 15 | 13 | 15 | 12 | 15 | 11 | 15 | 10 | 15 | 5 | 15 | 4 | 15 | 3 | 14 | 15
+INPUTS | 2 | RND0/Q<5>  | RND0/Q<1>
+INPUTMC | 2 | 0 | 4 | 0 | 13
+EQ | 2 | 
+   N_PZ_112 = RND0/Q<5> & !RND0/Q<1>
+	# !RND0/Q<5> & RND0/Q<1>;	// (2 pt, 2 inp)
+
+MACROCELL | 0 | 13 | RND0/Q<1>_MC
+ATTRIBUTES | 2290090752 | 0
+OUTPUTMC | 1 | 0 | 2
+INPUTS | 1 | RAND<1>
+INPUTMC | 1 | 14 | 13
+LCT | 1 | 2 | Internal_Name
+EQ | 2 | 
+   RND0/Q<1> := RAND<1>;	// (1 pt, 1 inp)
+    RND0/Q<1>.CLK = CLK;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 11 | 12 | RAND<5>_MC
+ATTRIBUTES | 1610875650 | 0
+OUTPUTMC | 8 | 0 | 12 | 15 | 13 | 15 | 12 | 15 | 11 | 15 | 10 | 15 | 5 | 15 | 4 | 15 | 3
+INPUTS | 2 | RND0/Q<5>  | RND0/Q<4>
+INPUTMC | 2 | 0 | 4 | 0 | 5
+EQ | 2 | 
+   RAND<5> = RND0/Q<5> & !RND0/Q<4>
+	# !RND0/Q<5> & RND0/Q<4>;	// (2 pt, 2 inp)
+
+MACROCELL | 15 | 12 | MAX<1>_MC
+ATTRIBUTES | 142869314 | 0
+INPUTS | 7 | CNT_INT<1>  | N_PZ_111  | N_PZ_113  | N_PZ_112  | RAND<1>  | RAND<4>  | RAND<5>
+INPUTMC | 7 | 0 | 15 | 0 | 3 | 0 | 1 | 0 | 2 | 14 | 13 | 11 | 13 | 11 | 12
+LCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   MAX<1> := CNT_INT<1>;	// (1 pt, 1 inp)
+    MAX<1>.CLK = CLK;	// CTC	(1 pt, 1 inp)
+    MAX<1>.CE = !N_PZ_111 & N_PZ_113 & !N_PZ_112 & !RAND<1> & 
+	!RAND<4> & !RAND<5>;	// (1 pt, 6 inp)
+
+MACROCELL | 0 | 15 | CNT_INT<1>_MC
+ATTRIBUTES | 2290090752 | 0
+OUTPUTMC | 7 | 0 | 15 | 15 | 12 | 0 | 6 | 0 | 7 | 0 | 8 | 0 | 9 | 0 | 10
+INPUTS | 3 | CNT_INT<0>  | RST_INT  | CNT_INT<1>
+INPUTMC | 3 | 0 | 14 | 0 | 12 | 0 | 15
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   CNT_INT<1> := CNT_INT<0> & !RST_INT & !CNT_INT<1>
+	# !CNT_INT<0> & !RST_INT & CNT_INT<1>;	// (2 pt, 3 inp)
+    CNT_INT<1>.CLK = !(CLK);	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 15 | 11 | MAX<2>_MC
+ATTRIBUTES | 142869314 | 0
+INPUTS | 7 | CNT_INT<2>  | N_PZ_111  | N_PZ_113  | N_PZ_112  | RAND<1>  | RAND<4>  | RAND<5>
+INPUTMC | 7 | 0 | 6 | 0 | 3 | 0 | 1 | 0 | 2 | 14 | 13 | 11 | 13 | 11 | 12
+LCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   MAX<2> := CNT_INT<2>;	// (1 pt, 1 inp)
+    MAX<2>.CLK = CLK;	// CTC	(1 pt, 1 inp)
+    MAX<2>.CE = !N_PZ_111 & N_PZ_113 & !N_PZ_112 & !RAND<1> & 
+	!RAND<4> & !RAND<5>;	// (1 pt, 6 inp)
+
+MACROCELL | 0 | 6 | CNT_INT<2>_MC
+ATTRIBUTES | 2285896448 | 0
+OUTPUTMC | 6 | 0 | 6 | 15 | 11 | 0 | 7 | 0 | 8 | 0 | 9 | 0 | 10
+INPUTS | 4 | RST_INT  | CNT_INT<2>  | CNT_INT<0>  | CNT_INT<1>
+INPUTMC | 4 | 0 | 12 | 0 | 6 | 0 | 14 | 0 | 15
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   CNT_INT<2>.T := RST_INT & CNT_INT<2>
+	# CNT_INT<0> & !RST_INT & CNT_INT<1>;	// (2 pt, 4 inp)
+    CNT_INT<2>.CLK = !(CLK);	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 15 | 10 | MAX<3>_MC
+ATTRIBUTES | 142869314 | 0
+INPUTS | 7 | CNT_INT<3>  | N_PZ_111  | N_PZ_113  | N_PZ_112  | RAND<1>  | RAND<4>  | RAND<5>
+INPUTMC | 7 | 0 | 7 | 0 | 3 | 0 | 1 | 0 | 2 | 14 | 13 | 11 | 13 | 11 | 12
+LCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   MAX<3> := CNT_INT<3>;	// (1 pt, 1 inp)
+    MAX<3>.CLK = CLK;	// CTC	(1 pt, 1 inp)
+    MAX<3>.CE = !N_PZ_111 & N_PZ_113 & !N_PZ_112 & !RAND<1> & 
+	!RAND<4> & !RAND<5>;	// (1 pt, 6 inp)
+
+MACROCELL | 0 | 7 | CNT_INT<3>_MC
+ATTRIBUTES | 2285896448 | 0
+OUTPUTMC | 5 | 0 | 7 | 15 | 10 | 0 | 8 | 0 | 9 | 0 | 10
+INPUTS | 5 | RST_INT  | CNT_INT<3>  | CNT_INT<0>  | CNT_INT<1>  | CNT_INT<2>
+INPUTMC | 5 | 0 | 12 | 0 | 7 | 0 | 14 | 0 | 15 | 0 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   CNT_INT<3>.T := RST_INT & CNT_INT<3>
+	# CNT_INT<0> & !RST_INT & CNT_INT<1> & CNT_INT<2>;	// (2 pt, 5 inp)
+    CNT_INT<3>.CLK = !(CLK);	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 15 | 5 | MAX<4>_MC
+ATTRIBUTES | 142869314 | 0
+INPUTS | 7 | CNT_INT<4>  | N_PZ_111  | N_PZ_113  | N_PZ_112  | RAND<1>  | RAND<4>  | RAND<5>
+INPUTMC | 7 | 0 | 8 | 0 | 3 | 0 | 1 | 0 | 2 | 14 | 13 | 11 | 13 | 11 | 12
+LCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   MAX<4> := CNT_INT<4>;	// (1 pt, 1 inp)
+    MAX<4>.CLK = CLK;	// CTC	(1 pt, 1 inp)
+    MAX<4>.CE = !N_PZ_111 & N_PZ_113 & !N_PZ_112 & !RAND<1> & 
+	!RAND<4> & !RAND<5>;	// (1 pt, 6 inp)
+
+MACROCELL | 0 | 8 | CNT_INT<4>_MC
+ATTRIBUTES | 2285896448 | 0
+OUTPUTMC | 4 | 0 | 8 | 15 | 5 | 0 | 9 | 0 | 10
+INPUTS | 6 | RST_INT  | CNT_INT<4>  | CNT_INT<0>  | CNT_INT<1>  | CNT_INT<2>  | CNT_INT<3>
+INPUTMC | 6 | 0 | 12 | 0 | 8 | 0 | 14 | 0 | 15 | 0 | 6 | 0 | 7
+LCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   CNT_INT<4>.T := RST_INT & CNT_INT<4>
+	# CNT_INT<0> & !RST_INT & CNT_INT<1> & CNT_INT<2> & 
+	CNT_INT<3>;	// (2 pt, 6 inp)
+    CNT_INT<4>.CLK = !(CLK);	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 15 | 4 | MAX<5>_MC
+ATTRIBUTES | 142869314 | 0
+INPUTS | 7 | CNT_INT<5>  | N_PZ_111  | N_PZ_113  | N_PZ_112  | RAND<1>  | RAND<4>  | RAND<5>
+INPUTMC | 7 | 0 | 9 | 0 | 3 | 0 | 1 | 0 | 2 | 14 | 13 | 11 | 13 | 11 | 12
+LCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   MAX<5> := CNT_INT<5>;	// (1 pt, 1 inp)
+    MAX<5>.CLK = CLK;	// CTC	(1 pt, 1 inp)
+    MAX<5>.CE = !N_PZ_111 & N_PZ_113 & !N_PZ_112 & !RAND<1> & 
+	!RAND<4> & !RAND<5>;	// (1 pt, 6 inp)
+
+MACROCELL | 0 | 9 | CNT_INT<5>_MC
+ATTRIBUTES | 2285896448 | 0
+OUTPUTMC | 3 | 0 | 9 | 15 | 4 | 0 | 10
+INPUTS | 7 | RST_INT  | CNT_INT<5>  | CNT_INT<0>  | CNT_INT<1>  | CNT_INT<2>  | CNT_INT<3>  | CNT_INT<4>
+INPUTMC | 7 | 0 | 12 | 0 | 9 | 0 | 14 | 0 | 15 | 0 | 6 | 0 | 7 | 0 | 8
+LCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   CNT_INT<5>.T := RST_INT & CNT_INT<5>
+	# CNT_INT<0> & !RST_INT & CNT_INT<1> & CNT_INT<2> & 
+	CNT_INT<3> & CNT_INT<4>;	// (2 pt, 7 inp)
+    CNT_INT<5>.CLK = !(CLK);	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 15 | 3 | MAX<6>_MC
+ATTRIBUTES | 142869314 | 0
+INPUTS | 7 | CNT_INT<6>  | N_PZ_111  | N_PZ_113  | N_PZ_112  | RAND<1>  | RAND<4>  | RAND<5>
+INPUTMC | 7 | 0 | 10 | 0 | 3 | 0 | 1 | 0 | 2 | 14 | 13 | 11 | 13 | 11 | 12
+LCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   MAX<6> := CNT_INT<6>;	// (1 pt, 1 inp)
+    MAX<6>.CLK = CLK;	// CTC	(1 pt, 1 inp)
+    MAX<6>.CE = !N_PZ_111 & N_PZ_113 & !N_PZ_112 & !RAND<1> & 
+	!RAND<4> & !RAND<5>;	// (1 pt, 6 inp)
+
+MACROCELL | 0 | 10 | CNT_INT<6>_MC
+ATTRIBUTES | 2285896448 | 0
+OUTPUTMC | 2 | 0 | 10 | 15 | 3
+INPUTS | 8 | RST_INT  | CNT_INT<6>  | CNT_INT<0>  | CNT_INT<1>  | CNT_INT<2>  | CNT_INT<3>  | CNT_INT<4>  | CNT_INT<5>
+INPUTMC | 8 | 0 | 12 | 0 | 10 | 0 | 14 | 0 | 15 | 0 | 6 | 0 | 7 | 0 | 8 | 0 | 9
+LCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   CNT_INT<6>.T := RST_INT & CNT_INT<6>
+	# CNT_INT<0> & !RST_INT & CNT_INT<1> & CNT_INT<2> & 
+	CNT_INT<3> & CNT_INT<4> & CNT_INT<5>;	// (2 pt, 8 inp)
+    CNT_INT<6>.CLK = !(CLK);	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 14 | 12 | RAND<0>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 1 | N_PZ_111
+INPUTMC | 1 | 0 | 3
+EQ | 1 | 
+   RAND<0> = N_PZ_111;	// (1 pt, 1 inp)
+
+MACROCELL | 14 | 15 | RAND<2>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 1 | N_PZ_112
+INPUTMC | 1 | 0 | 2
+EQ | 1 | 
+   RAND<2> = N_PZ_112;	// (1 pt, 1 inp)
+
+MACROCELL | 11 | 14 | RAND<3>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 1 | N_PZ_113
+INPUTMC | 1 | 0 | 1
+EQ | 1 | 
+   RAND<3> = N_PZ_113;	// (1 pt, 1 inp)
+
+PIN | CLK | 64 | 16 | LVCMOS33 | 70 | 0
+PIN | INIT | 64 | 16 | LVCMOS33 | 69 | 1 | 0 | 3
+PIN | MAX<0> | 536871040 | 0 | LVCMOS33 | 84
+PIN | MAX<1> | 536871040 | 0 | LVCMOS33 | 86
+PIN | MAX<2> | 536871040 | 0 | LVCMOS33 | 87
+PIN | MAX<3> | 536871040 | 0 | LVCMOS33 | 88
+PIN | MAX<4> | 536871040 | 0 | LVCMOS33 | 89
+PIN | MAX<5> | 536871040 | 0 | LVCMOS33 | 90
+PIN | MAX<6> | 536871040 | 0 | LVCMOS33 | 91
+PIN | RAND<0> | 536871040 | 0 | LVCMOS33 | 133
+PIN | RAND<1> | 536871040 | 0 | LVCMOS33 | 134
+PIN | RAND<2> | 536871040 | 0 | LVCMOS33 | 138
+PIN | RAND<3> | 536871040 | 0 | LVCMOS33 | 142
+PIN | RAND<4> | 536871040 | 0 | LVCMOS33 | 143
+PIN | RAND<5> | 536871040 | 0 | LVCMOS33 | 144

@@ -1,0 +1,254 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: RANDOM_SET.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "RANDOM_SET.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "RANDOM_SET"
+Output Format                      : NGC
+Target Device                      : CoolRunner2 CPLDs
+
+---- Source Options
+Top Module Name                    : RANDOM_SET
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+
+---- Target Options
+Add IO Buffers                     : YES
+MACRO Preserve                     : YES
+XOR Preserve                       : YES
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : Yes
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Verilog 2001                       : YES
+
+---- Other Options
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "F:/DTP_Lab4/DTP_Lab4_X_modelsim/6BitRandom.vhd" in Library work.
+Entity <ff> compiled.
+Entity <ff> (Architecture <behv>) compiled.
+Entity <random_6bit> compiled.
+Entity <random_6bit> (Architecture <behv>) compiled.
+Entity <random_ct> compiled.
+Entity <random_ct> (Architecture <counter>) compiled.
+Entity <random_set> compiled.
+Entity <random_set> (Architecture <behv>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <RANDOM_SET> in library <work> (architecture <behv>).
+
+Analyzing hierarchy for entity <RANDOM_6BIT> in library <work> (architecture <behv>).
+
+Analyzing hierarchy for entity <RANDOM_CT> in library <work> (architecture <counter>).
+
+Analyzing hierarchy for entity <FF> in library <work> (architecture <behv>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <RANDOM_SET> in library <work> (Architecture <behv>).
+Entity <RANDOM_SET> analyzed. Unit <RANDOM_SET> generated.
+
+Analyzing Entity <RANDOM_6BIT> in library <work> (Architecture <behv>).
+Entity <RANDOM_6BIT> analyzed. Unit <RANDOM_6BIT> generated.
+
+Analyzing Entity <FF> in library <work> (Architecture <behv>).
+Entity <FF> analyzed. Unit <FF> generated.
+
+Analyzing Entity <RANDOM_CT> in library <work> (Architecture <counter>).
+Entity <RANDOM_CT> analyzed. Unit <RANDOM_CT> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <RANDOM_CT>.
+    Related source file is "F:/DTP_Lab4/DTP_Lab4_X_modelsim/6BitRandom.vhd".
+    Found 7-bit up counter for signal <CNT_INT>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <RANDOM_CT> synthesized.
+
+
+Synthesizing Unit <FF>.
+    Related source file is "F:/DTP_Lab4/DTP_Lab4_X_modelsim/6BitRandom.vhd".
+    Found 1-bit register for signal <Q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <FF> synthesized.
+
+
+Synthesizing Unit <RANDOM_6BIT>.
+    Related source file is "F:/DTP_Lab4/DTP_Lab4_X_modelsim/6BitRandom.vhd".
+    Found 1-bit xor2 for signal <D<5>>.
+    Found 2-bit xor2 for signal <D<3:2>>.
+    Found 1-bit xor2 for signal <D<0>>.
+    Summary:
+	inferred   4 Xor(s).
+Unit <RANDOM_6BIT> synthesized.
+
+
+Synthesizing Unit <RANDOM_SET>.
+    Related source file is "F:/DTP_Lab4/DTP_Lab4_X_modelsim/6BitRandom.vhd".
+    Found 7-bit register for signal <MAX>.
+    Found 1-bit register for signal <RST_INT>.
+Unit <RANDOM_SET> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 7-bit up counter                                      : 1
+# Registers                                            : 8
+ 1-bit register                                        : 7
+ 7-bit register                                        : 1
+# Xors                                                 : 4
+ 1-bit xor2                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 7-bit up counter                                      : 1
+# Registers                                            : 6
+ Flip-Flops                                            : 6
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <RANDOM_SET> ...
+  implementation constraint: INIT=r	 : RST_INT
+
+Optimizing unit <FF> ...
+
+Optimizing unit <RANDOM_6BIT> ...
+
+Optimizing unit <RANDOM_CT> ...
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : RANDOM_SET.ngr
+Top Level Output File Name         : RANDOM_SET
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : Yes
+Target Technology                  : CoolRunner2 CPLDs
+Macro Preserve                     : YES
+XOR Preserve                       : YES
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+Design Statistics
+# IOs                              : 15
+
+Cell Usage :
+# BELS                             : 37
+#      AND2                        : 11
+#      AND6                        : 1
+#      GND                         : 1
+#      INV                         : 13
+#      OR2                         : 1
+#      XOR2                        : 10
+# FlipFlops/Latches                : 21
+#      FD                          : 14
+#      FDCE                        : 7
+# IO Buffers                       : 15
+#      IBUF                        : 2
+#      OBUF                        : 13
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.30 secs
+ 
+--> 
+
+Total memory usage is 249428 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,0 +1,59 @@
+xst -intstyle ise -ifn "F:/DTP_Lab4/DTP_Lab4_X_ISE/RANDOM_SET.xst" -ofn "F:/DTP_Lab4/DTP_Lab4_X_ISE/RANDOM_SET.syr" 
+xst -intstyle ise -ifn "F:/DTP_Lab4/DTP_Lab4_X_ISE/RANDOM_SET.xst" -ofn "F:/DTP_Lab4/DTP_Lab4_X_ISE/RANDOM_SET.syr" 
+xst -intstyle ise -ifn "F:/DTP_Lab4/DTP_Lab4_X_ISE/RANDOM_SET.xst" -ofn "F:/DTP_Lab4/DTP_Lab4_X_ISE/RANDOM_SET.syr" 
+xst -intstyle ise -ifn "F:/DTP_Lab4/DTP_Lab4_X_ISE/RANDOM_SET.xst" -ofn "F:/DTP_Lab4/DTP_Lab4_X_ISE/RANDOM_SET.syr" 
+xst -intstyle ise -ifn "F:/DTP_Lab4/DTP_Lab4_X_ISE/RANDOM_SET.xst" -ofn "F:/DTP_Lab4/DTP_Lab4_X_ISE/RANDOM_SET.syr" 
+xst -intstyle ise -ifn "F:/DTP_Lab4/DTP_Lab4_X_ISE/RANDOM_SET.xst" -ofn "F:/DTP_Lab4/DTP_Lab4_X_ISE/RANDOM_SET.syr" 
+xst -intstyle ise -ifn "F:/DTP_Lab4/DTP_Lab4_X_ISE/RANDOM_SET.xst" -ofn "F:/DTP_Lab4/DTP_Lab4_X_ISE/RANDOM_SET.syr" 
+xst -intstyle ise -ifn "F:/DTP_Lab4/DTP_Lab4_X_ISE/RANDOM_SET.xst" -ofn "F:/DTP_Lab4/DTP_Lab4_X_ISE/RANDOM_SET.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc F:/DTP_Lab4/DTP_Lab4_X_modelsim/modsys.ucf -p xc2c256-PQ208-7 RANDOM_SET.ngc RANDOM_SET.ngd  
+cpldfit -intstyle ise -p xc2c256-7-PQ208 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 RANDOM_SET.ngd 
+XSLTProcess RANDOM_SET_build.xml 
+xst -intstyle ise -ifn "F:/DTP_Lab4/DTP_Lab4_X_ISE/RANDOM_SET.xst" -ofn "F:/DTP_Lab4/DTP_Lab4_X_ISE/RANDOM_SET.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc F:/DTP_Lab4/DTP_Lab4_X_modelsim/modsys.ucf -p xc2c256-PQ208-7 RANDOM_SET.ngc RANDOM_SET.ngd  
+cpldfit -intstyle ise -p xc2c256-7-PQ208 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 RANDOM_SET.ngd 
+XSLTProcess RANDOM_SET_build.xml 
+xst -intstyle ise -ifn "F:/DTP_Lab4/DTP_Lab4_X_ISE/RANDOM_SET.xst" -ofn "F:/DTP_Lab4/DTP_Lab4_X_ISE/RANDOM_SET.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc F:/DTP_Lab4/DTP_Lab4_X_modelsim/modsys.ucf -p xc2c256-PQ208-7 RANDOM_SET.ngc RANDOM_SET.ngd  
+cpldfit -intstyle ise -p xc2c256-7-PQ208 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 RANDOM_SET.ngd 
+XSLTProcess RANDOM_SET_build.xml 
+cpldfit -intstyle ise -p xc2c256-7-PQ208 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 RANDOM_SET.ngd 
+XSLTProcess RANDOM_SET_build.xml 
+cpldfit -intstyle ise -p xc2c256-7-PQ208 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 RANDOM_SET.ngd 
+XSLTProcess RANDOM_SET_build.xml 
+cpldfit -intstyle ise -p xc2c256-7-PQ208 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 RANDOM_SET.ngd 
+XSLTProcess RANDOM_SET_build.xml 
+ngdbuild -intstyle ise -dd _ngo -uc F:/DTP_Lab4/DTP_Lab4_X_modelsim/modsys.ucf -p xc2c256-PQ208-7 RANDOM_SET.ngc RANDOM_SET.ngd  
+cpldfit -intstyle ise -p xc2c256-7-PQ208 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 RANDOM_SET.ngd 
+XSLTProcess RANDOM_SET_build.xml 
+tsim -intstyle ise RANDOM_SET RANDOM_SET.nga 
+hprep6 -s IEEE1149 -i RANDOM_SET 
+xst -intstyle ise -ifn "F:/DTP_Lab4/DTP_Lab4_X_ISE/RANDOM_SET.xst" -ofn "F:/DTP_Lab4/DTP_Lab4_X_ISE/RANDOM_SET.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc F:/DTP_Lab4/DTP_Lab4_X_modelsim/modsys.ucf -p xc2c256-PQ208-7 RANDOM_SET.ngc RANDOM_SET.ngd  
+cpldfit -intstyle ise -p xc2c256-7-PQ208 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 RANDOM_SET.ngd 
+XSLTProcess RANDOM_SET_build.xml 
+tsim -intstyle ise RANDOM_SET RANDOM_SET.nga 
+hprep6 -s IEEE1149 -i RANDOM_SET 
+xst -intstyle ise -ifn "F:/DTP_Lab4/DTP_Lab4_X_ISE/RANDOM_SET.xst" -ofn "F:/DTP_Lab4/DTP_Lab4_X_ISE/RANDOM_SET.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc F:/DTP_Lab4/DTP_Lab4_X_modelsim/modsys.ucf -p xc2c256-PQ208-7 RANDOM_SET.ngc RANDOM_SET.ngd  
+cpldfit -intstyle ise -p xc2c256-7-PQ208 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 RANDOM_SET.ngd 
+XSLTProcess RANDOM_SET_build.xml 
+tsim -intstyle ise RANDOM_SET RANDOM_SET.nga 
+hprep6 -s IEEE1149 -i RANDOM_SET 
+xst -intstyle ise -ifn "F:/DTP_Lab4/DTP_Lab4_X_ISE/RANDOM_SET.xst" -ofn "F:/DTP_Lab4/DTP_Lab4_X_ISE/RANDOM_SET.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc F:/DTP_Lab4/DTP_Lab4_X_modelsim/modsys.ucf -p xc2c256-PQ208-7 RANDOM_SET.ngc RANDOM_SET.ngd  
+cpldfit -intstyle ise -p xc2c256-7-PQ208 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 RANDOM_SET.ngd 
+XSLTProcess RANDOM_SET_build.xml 
+tsim -intstyle ise RANDOM_SET RANDOM_SET.nga 
+hprep6 -s IEEE1149 -i RANDOM_SET 
+xst -intstyle ise -ifn "F:/DTP_Lab4/DTP_Lab4_X_ISE/RANDOM_SET.xst" -ofn "F:/DTP_Lab4/DTP_Lab4_X_ISE/RANDOM_SET.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc F:/DTP_Lab4/DTP_Lab4_X_modelsim/modsys.ucf -p xc2c256-PQ208-7 RANDOM_SET.ngc RANDOM_SET.ngd  
+cpldfit -intstyle ise -p xc2c256-7-PQ208 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 RANDOM_SET.ngd 
+XSLTProcess RANDOM_SET_build.xml 
+tsim -intstyle ise RANDOM_SET RANDOM_SET.nga 
+hprep6 -s IEEE1149 -i RANDOM_SET 
+vhdtdtfi -lib work ../DTP_Lab4_X_modelsim/6BitRandom.vhd -prj DTP_Lab4_X_ISE -o RANDOM_SET.spl -module RANDOM_SET -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr RANDOM_SET.spl F:/DTP_Lab4/DTP_Lab4_X_ISE/RANDOM_SET.sym 
+taengine -intstyle ise -f RANDOM_SET -w --format html1 -l RANDOM_SET_html/tim/timing_report.htm 
+netgen -intstyle ise -rpw 100 -ar Structure -tm RANDOM_SET -w -dir netgen/fit -ofmt vhdl -sim RANDOM_SET.nga RANDOM_SET_timesim.vhd 
+ibiswriter -intstyle ise RANDOM_SET.pnx RANDOM_SET.ibs 

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="DTP_Lab4_X_ISE.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="RANDOM_SET.bld"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_CHK" xil_pn:name="RANDOM_SET.chk"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="RANDOM_SET.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_CXT" xil_pn:name="RANDOM_SET.cxt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_GYD" xil_pn:name="RANDOM_SET.gyd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_IBS" xil_pn:name="RANDOM_SET.ibs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_JEDEC" xil_pn:name="RANDOM_SET.jed"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="RANDOM_SET.log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="RANDOM_SET.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MFD" xil_pn:name="RANDOM_SET.mfd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGA" xil_pn:name="RANDOM_SET.nga"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="RANDOM_SET.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="RANDOM_SET.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="RANDOM_SET.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="RANDOM_SET.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PNX" xil_pn:name="RANDOM_SET.pnx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="RANDOM_SET.prj"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="RANDOM_SET.rpt"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="RANDOM_SET.spl"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="RANDOM_SET.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="RANDOM_SET.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="RANDOM_SET.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VM6" xil_pn:name="RANDOM_SET.vm6"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="RANDOM_SET.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="RANDOM_SET.xst"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="RANDOM_SET_build.xml"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="RANDOM_SET_envsettings.html"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="RANDOM_SET_html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="RANDOM_SET_ngdbuild.xrpt"/>
+    <file xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="RANDOM_SET_pad.csv"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="RANDOM_SET_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="RANDOM_SET_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="RANDOM_SET_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="netgen"/>
+    <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/fit/RANDOM_SET_timesim.nlf"/>
+    <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_SDF" xil_pn:name="netgen/fit/RANDOM_SET_timesim.sdf"/>
+    <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_VHDL" xil_pn:name="netgen/fit/RANDOM_SET_timesim.vhd"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1421220224" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1421220223">
+      <status xil_pn:value="SuccessfullyRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1421220224" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="5895775199853989010" xil_pn:start_ts="1421220224">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1421223598" xil_pn:in_ck="-5818096856982144614" xil_pn:name="TRANEXT_xstsynthesize_xbr" xil_pn:prop_ck="-6220544963378052942" xil_pn:start_ts="1421223590">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="RANDOM_SET.lso"/>
+      <outfile xil_pn:name="RANDOM_SET.ngc"/>
+      <outfile xil_pn:name="RANDOM_SET.ngr"/>
+      <outfile xil_pn:name="RANDOM_SET.prj"/>
+      <outfile xil_pn:name="RANDOM_SET.stx"/>
+      <outfile xil_pn:name="RANDOM_SET.syr"/>
+      <outfile xil_pn:name="RANDOM_SET.xst"/>
+      <outfile xil_pn:name="RANDOM_SET_vhdl.prj"/>
+      <outfile xil_pn:name="RANDOM_SET_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1421221865" xil_pn:in_ck="-542382138539633249" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-4874298393713001300" xil_pn:start_ts="1421221865">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1421223603" xil_pn:in_ck="1810642325285374289" xil_pn:name="TRAN_ngdbuild" xil_pn:prop_ck="-2348776846946213859" xil_pn:start_ts="1421223598">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="RANDOM_SET.bld"/>
+      <outfile xil_pn:name="RANDOM_SET.ngd"/>
+      <outfile xil_pn:name="RANDOM_SET_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1421223622" xil_pn:in_ck="-4360705927830435469" xil_pn:name="TRANEXT_vm6File_xbr" xil_pn:prop_ck="-9083618697133381821" xil_pn:start_ts="1421223603">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="RANDOM_SET.chk"/>
+      <outfile xil_pn:name="RANDOM_SET.cxt"/>
+      <outfile xil_pn:name="RANDOM_SET.gyd"/>
+      <outfile xil_pn:name="RANDOM_SET.log"/>
+      <outfile xil_pn:name="RANDOM_SET.mfd"/>
+      <outfile xil_pn:name="RANDOM_SET.nga"/>
+      <outfile xil_pn:name="RANDOM_SET.pad"/>
+      <outfile xil_pn:name="RANDOM_SET.pnx"/>
+      <outfile xil_pn:name="RANDOM_SET.rpt"/>
+      <outfile xil_pn:name="RANDOM_SET.vm6"/>
+      <outfile xil_pn:name="RANDOM_SET.xml"/>
+      <outfile xil_pn:name="RANDOM_SET_build.xml"/>
+      <outfile xil_pn:name="RANDOM_SET_html"/>
+      <outfile xil_pn:name="RANDOM_SET_pad.csv"/>
+    </transform>
+    <transform xil_pn:end_ts="1421223633" xil_pn:in_ck="-4360705927830426605" xil_pn:name="TRANEXT_crtProg_xbr" xil_pn:prop_ck="5245363024343" xil_pn:start_ts="1421223622">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="RANDOM_SET.jed"/>
+    </transform>
+    <transform xil_pn:end_ts="1421221918" xil_pn:in_ck="-4360705927830439891" xil_pn:name="TRAN_impactProgrammingTool_CPLD" xil_pn:prop_ck="7996569619189960536" xil_pn:start_ts="1421221918">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+    </transform>
+    <transform xil_pn:end_ts="1421223905" xil_pn:in_ck="-4360705927830433040" xil_pn:name="TRANEXT_createIBISModel_xbr" xil_pn:prop_ck="-6190250903920779739" xil_pn:start_ts="1421223902">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="RANDOM_SET.ibs"/>
+    </transform>
+    <transform xil_pn:end_ts="1421223894" xil_pn:in_ck="-4360705927830426605" xil_pn:name="TRAN_timRpt" xil_pn:prop_ck="111903974446" xil_pn:start_ts="1421223888">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1421223906" xil_pn:in_ck="1810642325285367261" xil_pn:name="TRAN_lockPins" xil_pn:start_ts="1421223906">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1421223900" xil_pn:in_ck="-4360705927830435472" xil_pn:name="TRAN_postFitSimModel" xil_pn:prop_ck="-3587046253424017581" xil_pn:start_ts="1421223896">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="netgen"/>
+      <outfile xil_pn:name="netgen/fit/RANDOM_SET_timesim.nlf"/>
+      <outfile xil_pn:name="netgen/fit/RANDOM_SET_timesim.sdf"/>
+      <outfile xil_pn:name="netgen/fit/RANDOM_SET_timesim.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1421223863" xil_pn:in_ck="1810642325285374290" xil_pn:name="TRAN_createTimingConstraints" xil_pn:start_ts="1421223862">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+  </transforms>
+
+</generated_project>

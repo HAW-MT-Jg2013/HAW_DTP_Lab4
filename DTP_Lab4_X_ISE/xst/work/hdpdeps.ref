@@ -1,0 +1,20 @@
+V3 12
+FL F:/DTP_Lab4/DTP_Lab4_X_modelsim/6BitRandom.vhd 2015/01/14.09:19:44 P.20131013
+EN work/FF 1421223592 FL F:/DTP_Lab4/DTP_Lab4_X_modelsim/6BitRandom.vhd
+AR work/FF/behv 1421223593 \
+      FL F:/DTP_Lab4/DTP_Lab4_X_modelsim/6BitRandom.vhd EN work/FF 1421223592
+EN work/RANDOM_6BIT 1421223594 \
+      FL F:/DTP_Lab4/DTP_Lab4_X_modelsim/6BitRandom.vhd
+AR work/RANDOM_6BIT/behv 1421223595 \
+      FL F:/DTP_Lab4/DTP_Lab4_X_modelsim/6BitRandom.vhd EN work/RANDOM_6BIT 1421223594 \
+      CP FF
+EN work/RANDOM_CT 1421223596 \
+      FL F:/DTP_Lab4/DTP_Lab4_X_modelsim/6BitRandom.vhd PB ieee/std_logic_1164 1381692176 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/RANDOM_CT/counter 1421223597 \
+      FL F:/DTP_Lab4/DTP_Lab4_X_modelsim/6BitRandom.vhd EN work/RANDOM_CT 1421223596
+EN work/RANDOM_SET 1421223598 \
+      FL F:/DTP_Lab4/DTP_Lab4_X_modelsim/6BitRandom.vhd
+AR work/RANDOM_SET/behv 1421223599 \
+      FL F:/DTP_Lab4/DTP_Lab4_X_modelsim/6BitRandom.vhd EN work/RANDOM_SET 1421223598 \
+      CP RANDOM_6BIT CP RANDOM_CT

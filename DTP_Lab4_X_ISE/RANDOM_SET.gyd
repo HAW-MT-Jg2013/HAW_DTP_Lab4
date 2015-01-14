@@ -1,0 +1,48 @@
+Pin Freeze File:  version P.20131013
+
+2C256208 XC2C256-7-PQ208
+CLK S:PIN66
+INIT S:PIN65
+MAX<0> S:PIN80
+MAX<1> S:PIN82
+MAX<2> S:PIN83
+MAX<3> S:PIN84
+MAX<4> S:PIN85
+MAX<5> S:PIN86
+MAX<6> S:PIN87
+RAND<0> S:PIN127
+RAND<1> S:PIN128
+RAND<2> S:PIN131
+RAND<3> S:PIN134
+RAND<4> S:PIN135
+RAND<5> S:PIN136
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_2 N_PZ_113 N_PZ_112 N_PZ_111 RND0/Q<5>
+		 RND0/Q<4> CNT_INT<2> CNT_INT<3> CNT_INT<4>
+		 CNT_INT<5> CNT_INT<6> RND0/Q<2> RST_INT
+		 RND0/Q<1> CNT_INT<0> CNT_INT<1>
+
+
+
+
+
+
+
+
+
+
+PARTITION FB12_13 RAND<5> RAND<4> RAND<3>
+
+
+
+PARTITION FB15_13 RAND<0> RAND<1>
+PARTITION FB15_16 RAND<2>
+PARTITION FB16_4 MAX<6> MAX<5> MAX<4>
+PARTITION FB16_11 MAX<3> MAX<2> MAX<1> MAX<0>
+		
+
+

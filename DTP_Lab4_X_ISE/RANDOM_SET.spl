@@ -1,0 +1,7 @@
+[Inputs]
+INIT
+CLK
+[Outputs]
+=RAND[5:0]=
+=MAX[6:0]=
+[BiDir]

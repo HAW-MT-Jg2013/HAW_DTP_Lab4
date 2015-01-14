@@ -1,0 +1,8 @@
+AR random_ct counter F:/DTP_Lab4/DTP_Lab4_X_modelsim/6BitRandom.vhd sub00/vhpl05 1421223597
+AR ff behv F:/DTP_Lab4/DTP_Lab4_X_modelsim/6BitRandom.vhd sub00/vhpl01 1421223593
+EN ff NULL F:/DTP_Lab4/DTP_Lab4_X_modelsim/6BitRandom.vhd sub00/vhpl00 1421223592
+AR random_set behv F:/DTP_Lab4/DTP_Lab4_X_modelsim/6BitRandom.vhd sub00/vhpl07 1421223599
+AR random_6bit behv F:/DTP_Lab4/DTP_Lab4_X_modelsim/6BitRandom.vhd sub00/vhpl03 1421223595
+EN random_6bit NULL F:/DTP_Lab4/DTP_Lab4_X_modelsim/6BitRandom.vhd sub00/vhpl02 1421223594
+EN random_set NULL F:/DTP_Lab4/DTP_Lab4_X_modelsim/6BitRandom.vhd sub00/vhpl06 1421223598
+EN random_ct NULL F:/DTP_Lab4/DTP_Lab4_X_modelsim/6BitRandom.vhd sub00/vhpl04 1421223596
