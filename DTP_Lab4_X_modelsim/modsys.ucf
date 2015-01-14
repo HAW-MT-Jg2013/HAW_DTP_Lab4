@@ -1,0 +1,68 @@
+# User Constraint File fuer Modulares System 
+# Autor: Friedrich, Daniel und Beyerstedt, Jannik
+  
+# Datum der Erstellung: Mittwoch, der 14. Januar 2015
+# Xilinx Coolrunner 
+# Baustein XC2C256-PQG208-7C 
+ 
+# Komponenten, die an das Mainboard angeschlossen sind:  
+# Connector3:  IOM-Board 
+# Connector4:  IOM-Board 
+  
+# NET SYSCLK LOC = P55  | IOSTANDARD=LVCMOS33;
+# Diesen Pin vorzugsweise fuer Clock verwenden.
+   
+# NET NRESET LOC = P206 | IOSTANDARD=LVCMOS33;
+# Dieser Pin liegt auf der RESET-Taste des Mainboards, Low-aktiv 
+   
+#--------------------------------------------------------------#
+# Input-Output Messboard (IOM) an Connector 3 
+#      
+########################## INPUTS ##############################
+#NET  IOM_IN_SW<0>  LOC = P76 | IOSTANDARD=LVCMOS33; # IN_0
+#NET  IOM_IN_SW<1>  LOC = P75 | IOSTANDARD=LVCMOS33; # IN_1
+#NET  IOM_IN_SW<2>  LOC = P74 | IOSTANDARD=LVCMOS33; # IN_2
+#NET  IOM_IN_SW<3>  LOC = P73 | IOSTANDARD=LVCMOS33; # IN_3
+#NET  IOM_IN_SW<4>  LOC = P72 | IOSTANDARD=LVCMOS33; # IN_4
+#NET  IOM_IN_SW<5>  LOC = P71 | IOSTANDARD=LVCMOS33; # IN_5
+#NET  IOM_IN_SW<6>  LOC = P70 | IOSTANDARD=LVCMOS33; # IN_6
+#NET  IOM_IN_SW<7>  LOC = P69 | IOSTANDARD=LVCMOS33; # IN_7
+#      
+NET   CLK   LOC = P66 | IOSTANDARD=LVCMOS33; # IN_T0
+NET   INIT   LOC = P65 | IOSTANDARD=LVCMOS33; # IN_T1
+#      
+########################## OUTPUTS #############################
+NET  MAX<0>    LOC = P80 | IOSTANDARD=LVCMOS33; # OUT_0
+NET  MAX<1>    LOC = P82 | IOSTANDARD=LVCMOS33; # OUT_1
+NET  MAX<2>    LOC = P83 | IOSTANDARD=LVCMOS33; # OUT_2
+NET  MAX<3>    LOC = P84 | IOSTANDARD=LVCMOS33; # OUT_3
+NET  MAX<4>    LOC = P85 | IOSTANDARD=LVCMOS33; # OUT_4
+NET  MAX<5>    LOC = P86 | IOSTANDARD=LVCMOS33; # OUT_5
+NET  MAX<6>    LOC = P87 | IOSTANDARD=LVCMOS33; # OUT_6
+#NET  IOM_OUT<7>    LOC = P88 | IOSTANDARD=LVCMOS33; # OUT_7
+#      
+#--------------------------------------------------------------#
+# Input-Output Messboard (IOM) an Connector 4 
+#      
+########################## INPUTS ##############################
+#NET  IOM_IN_SW<0>  LOC = P123 | IOSTANDARD=LVCMOS33; # IN_0
+#NET  IOM_IN_SW<1>  LOC = P122 | IOSTANDARD=LVCMOS33; # IN_1
+#NET  IOM_IN_SW<2>  LOC = P121 | IOSTANDARD=LVCMOS33; # IN_2
+#NET  IOM_IN_SW<3>  LOC = P120 | IOSTANDARD=LVCMOS33; # IN_3
+#NET  IOM_IN_SW<4>  LOC = P119 | IOSTANDARD=LVCMOS33; # IN_4
+#NET  IOM_IN_SW<5>  LOC = P118 | IOSTANDARD=LVCMOS33; # IN_5
+#NET  IOM_IN_SW<6>  LOC = P117 | IOSTANDARD=LVCMOS33; # IN_6
+#NET  IOM_IN_SW<7>  LOC = P116 | IOSTANDARD=LVCMOS33; # IN_7
+#      
+#NET  IOM_IN_T<0>   LOC = P114 | IOSTANDARD=LVCMOS33; # IN_T0
+#NET  IOM_IN_T<1>   LOC = P113 | IOSTANDARD=LVCMOS33; # IN_T1
+#      
+########################## OUTPUTS #############################
+NET  RAND<0>    LOC = P127 | IOSTANDARD=LVCMOS33; # OUT_0
+NET  RAND<1>    LOC = P128 | IOSTANDARD=LVCMOS33; # OUT_1
+NET  RAND<2>    LOC = P131 | IOSTANDARD=LVCMOS33; # OUT_2
+NET  RAND<3>    LOC = P134 | IOSTANDARD=LVCMOS33; # OUT_3
+NET  RAND<4>    LOC = P135 | IOSTANDARD=LVCMOS33; # OUT_4
+NET  RAND<5>    LOC = P136 | IOSTANDARD=LVCMOS33; # OUT_5
+#NET  IOM_OUT<6>    LOC = P137 | IOSTANDARD=LVCMOS33; # OUT_6
+#NET  IOM_OUT<7>    LOC = P138 | IOSTANDARD=LVCMOS33; # OUT_7
